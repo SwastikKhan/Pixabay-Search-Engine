@@ -6,7 +6,7 @@ import urllib.parse
 
 # Function to fetch image data from Pixabay API
 def fetch_images(search_term):
-    api_key = "46093786-16a74134e123471b002587ac0"
+    api_key = "your-api-key"
     url = f"https://pixabay.com/api/?key={api_key}&q={search_term}&image_type=photo"
     result = requests.get(url)
     return result.json()
